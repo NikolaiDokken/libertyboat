@@ -6,36 +6,40 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav
-        class="navbar navbar-expand-md navbar-light sticky-top bg-custom"
+        className="navbar navbar-expand-md navbar-light sticky-top bg-custom"
         role="navigation"
       >
         <button
-          class="navbar-toggler collapsed"
+          className="navbar-toggler collapsed"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav mx-auto">
-            <li class="nav-item custom-text">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="nav navbar-nav mx-auto">
+            <li className="nav-item custom-text">
               <NavLink className="nav-link" exact to="/gallery">
                 <div>GALLERI</div>
               </NavLink>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <NavLink
                 className="nav-link"
                 activeClassName="active-img"
                 exact
                 to="/"
               >
-                <img class="boat-logo" src="./resources/logo.png" alt=""></img>
+                <img
+                  className="boat-logo"
+                  src="./resources/logo.png"
+                  alt=""
+                ></img>
               </NavLink>
             </li>
-            <li class="nav-item custom-text">
+            <li className="nav-item custom-text">
               <NavLink className="nav-link" exact to="/history">
                 HISTORIKK
               </NavLink>
