@@ -26,18 +26,20 @@ export default class Navbar extends Component {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                activeClassName="active-img"
-                exact
-                to="/"
-              >
-                <img
-                  className="boat-logo"
-                  src="./resources/logo.png"
-                  alt=""
-                ></img>
-              </NavLink>
+              <div>
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active-img"
+                  exact
+                  to="/"
+                >
+                  <img
+                    className="boat-logo"
+                    src="./resources/logo.png"
+                    alt=""
+                  ></img>
+                </NavLink>
+              </div>
             </li>
             <li className="nav-item custom-text">
               <NavLink className="nav-link" exact to="/history">
