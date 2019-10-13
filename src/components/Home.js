@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import "../styles/stylesheet.css";
+import Navbar from "./Navbar.js";
 
-class Home extends Component {
+export default class Home extends Component {
   render() {
+    const { location } = this.props;
     return (
       <div className="home-container">
-        <h1>Her kommer home og nyhetssaker</h1>
+        <Navbar location={location} />
+        <h2>Her kommer home og nyhetssaker</h2>
       </div>
     );
   }
 }
-
-export default Home;
