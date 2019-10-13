@@ -1,4 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+
 .bg-custom {
   background-image: url(../resources/navbar.png);
   background-size: contain;
+}
+
+.custom-text {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.boat-logo {
+  height: 70px;
+  width: auto;
+  opacity: 0.55;
+}
+
+.boat-logo:hover {
+  opacity: 1;
+}
+
+.active-img img {
+  opacity: 1;
 }

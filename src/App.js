@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { HashRouter, Route } from "react-router-dom";
-import Register from "./components/Register";
-import Home from "./components/Home";
-import "./styles/stylesheet.css";
-
+import History from "./components/pages/History";
+import Home from "./components/pages/Home";
+import Gallery from "./components/pages/Gallery";
 
 class App extends Component {
   render() {
     return (
-        <HashRouter>
-            <Route exact path="/" component={Home} />
-            <Route path="/register" component={Register} />
-        </HashRouter>
+      <HashRouter>
+        <Route exact path="/" component={Home} />
+        <Route path="/history" component={History} />
+        <Route path="/gallery" component={Gallery} />
+      </HashRouter>
     );
   }
 }
