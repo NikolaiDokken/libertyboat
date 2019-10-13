@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar.js";
+import Footer from "../components/Footer.js";
 import "../../styles/Home.css";
 
 export default class Home extends Component {
@@ -91,7 +92,7 @@ export default class Home extends Component {
           <div className="row no-gutters">
             <div className="col-md-6 my-auto">
               <div className="card-body">
-                <h5 className="card-title">Interiør</h5>
+                <h5 className="card-title">Funksjonalitet</h5>
                 <p className="card-text">
                   Stor cockpit delvis under tak, delvis åpen. Stor "L­-Sofa" med
                   bord under åpen himmel som kan dekkes med kallesje. Luker i
@@ -134,6 +135,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
