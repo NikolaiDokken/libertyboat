@@ -18,14 +18,20 @@ export default class Navbar extends Component {
           <span className="navbar-toggler-icon"></span>
         </button>
 
+        <div className="nav-item custom-text mx-auto my-auto d-block d-sm-block d-md-none mobile-custom-text">
+          <NavLink className="nav-link" exact to="/">
+            <div>LIBERTY</div>
+          </NavLink>
+        </div>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="nav navbar-nav mx-auto">
-            <li className="nav-item custom-text">
+            <li className="nav-item custom-text mx-5 my-auto">
               <NavLink className="nav-link" exact to="/gallery">
                 <div>GALLERI</div>
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mx-5 my-auto d-sm-none d-md-block">
               <div>
                 <NavLink
                   className="nav-link"
@@ -41,7 +47,12 @@ export default class Navbar extends Component {
                 </NavLink>
               </div>
             </li>
-            <li className="nav-item custom-text">
+            <li className="nav-item custom-text mx-5 my-auto d-none d-sm-block d-md-none">
+              <NavLink className="nav-link" exact to="/">
+                FORSIDE
+              </NavLink>
+            </li>
+            <li className="nav-item custom-text mx-5 my-auto">
               <NavLink className="nav-link" exact to="/history">
                 HISTORIKK
               </NavLink>

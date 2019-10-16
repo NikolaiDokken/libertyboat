@@ -3,10 +3,9 @@ import Navbar from "../components/Navbar.js";
 
 export default class Register extends Component {
   render() {
-    const { location } = this.props;
     return (
       <div>
-        <Navbar location={location} />
+        <Navbar />
         <h2>Båtens historikk</h2>
       </div>
     );

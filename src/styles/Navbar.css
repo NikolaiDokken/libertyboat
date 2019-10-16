@@ -13,17 +13,50 @@
 .boat-logo {
   height: 70px;
   width: auto;
-  opacity: 0.55;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .boat-logo:hover {
-  opacity: 1;
-}
-
-.active-img img {
-  opacity: 1;
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.navbar-light .navbar-nav > .nav-item > .active {
+  color: #ffffff; /* <—– change your color here*/
+}
+
+.navbar-light .navbar-nav > .nav-item > a:hover {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav > .nav-item > a {
+  color: #000000; /* <—– change your color here*/
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+@media only screen and (max-width: 830px) {
+  .custom-text {
+    font-size: 30px;
+  }
+}
+
+.mobile-custom-text > a {
+  color: #000000;
+}
+
+.mobile-custom-text > a:hover {
+  color: #ffffff;
+}
+
+.mobile-custom-text > .active {
+  color: white;
+}
+

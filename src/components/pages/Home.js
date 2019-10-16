@@ -5,7 +5,6 @@ import "../../styles/Home.css";
 
 export default class Home extends Component {
   render() {
-    const { location } = this.props;
     return (
       <div>
         <img
@@ -13,7 +12,7 @@ export default class Home extends Component {
           src="resources/header.png"
           alt="08.07.19"
         ></img>
-        <Navbar location={location} />
+        <Navbar />
 
         <div className="card mb-3 my-4" style={{ maxWidth: "100%" }}>
           <div className="row no-gutters">
@@ -87,6 +86,28 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+
+        <header>
+          <div class="overlay"></div>
+          <video
+            playsinline="playsinline"
+            autoplay="autoplay"
+            muted="muted"
+            loop="loop"
+          >
+            <source
+              src="https://i.imgur.com/MiThv8K.mp4"
+              type="video/mp4"
+            ></source>
+          </video>
+          <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white">
+                <h1 class="display-3">49 fot fra 1967</h1>
+              </div>
+            </div>
+          </div>
+        </header>
 
         <div className="card mb-3" style={{ maxWidth: "100%" }}>
           <div className="row no-gutters">
