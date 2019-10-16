@@ -14,9 +14,9 @@ export default class Home extends Component {
         ></img>
         <Navbar />
 
-        <div className="card mb-3 my-4" style={{ maxWidth: "100%" }}>
+        <div className="card mb-3 mx-4 my-4" style={{ maxWidth: "100%" }}>
           <div className="row no-gutters">
-            <div className="col-md-6 p-2 my-auto" styles={{ width: "50%" }}>
+            <div className="col-md-7 p-2 my-auto" styles={{ width: "50%" }}>
               <img
                 src="./resources/finnAnnonse.png"
                 className="card-img"
@@ -24,7 +24,7 @@ export default class Home extends Component {
                 styles={{ width: "100%" }}
               ></img>
             </div>
-            <div className="col-md-6 my-auto">
+            <div className="col-md-5 my-auto">
               <div className="card-body">
                 <table className="table table-striped">
                   <tbody>
@@ -109,7 +109,7 @@ export default class Home extends Component {
           </div>
         </header>
 
-        <div className="card mb-3" style={{ maxWidth: "100%" }}>
+        <div className="card mb-3 mx-4 my-4" style={{ maxWidth: "100%" }}>
           <div className="row no-gutters">
             <div className="col-md-6 my-auto">
               <div className="card-body">
