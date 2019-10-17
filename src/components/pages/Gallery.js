@@ -10,7 +10,8 @@ const images = [
   "./resources/3.jpg",
   "./resources/5.png",
   "./resources/1967.jpg",
-  "./resources/1978.jpg"
+  "./resources/1978.jpg",
+  "https://i.imgur.com/TzhCbti.mp4"
 ];
 
 export default class Home extends Component {
@@ -69,6 +70,14 @@ export default class Home extends Component {
                 class="col-md-4"
               >
                 <img src={images[5]} class="img-fluid rounded"></img>
+              </a>
+            </div>
+            <div class="row">
+              <a
+                onClick={() => this.setState({ photoIndex: 6, isOpen: true })}
+                class="col-md-4"
+              >
+                <video src={images[6]} class="img-fluid rounded"></video>
               </a>
             </div>
           </div>
