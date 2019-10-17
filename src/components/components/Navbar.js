@@ -31,7 +31,7 @@ export default class Navbar extends Component {
                 <div>GALLERI</div>
               </NavLink>
             </li>
-            <li className="nav-item mx-5 my-auto d-sm-none d-md-block">
+            <li className="nav-item mx-5 my-auto d-none d-sm-none d-md-block">
               <div>
                 <NavLink
                   className="nav-link"
@@ -47,7 +47,7 @@ export default class Navbar extends Component {
                 </NavLink>
               </div>
             </li>
-            <li className="nav-item custom-text mx-5 my-auto d-none d-sm-block d-md-none">
+            <li className="nav-item custom-text mx-5 my-auto d-block d-sm-block d-md-none">
               <NavLink className="nav-link" exact to="/">
                 FORSIDE
               </NavLink>

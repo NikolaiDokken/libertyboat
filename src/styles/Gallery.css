@@ -1,0 +1,17 @@
+.row {
+  margin: 15px;
+}
+
+.column {
+  margin: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .row {
+    margin: 0;
+  }
+
+  .row a {
+    margin: 10px;
+  }
+}

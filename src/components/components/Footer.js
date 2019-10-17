@@ -24,11 +24,15 @@ export default class Navbar extends Component {
               <ul class="list-unstyled">
                 <li>
                   <div>Om båten</div>
-                  <a href="mailto:dokkena@libertyboat.no">Dokkena@libertyboat.no</a>
+                  <a href="mailto:dokkena@libertyboat.no">
+                    Dokkena@libertyboat.no
+                  </a>
                 </li>
                 <li>
                   <div>Om nettsiden</div>
-                  <a href="mailto:nikolairdokken@gmail.com">NikolaiRDokken@gmail.com</a>
+                  <a href="mailto:nikolairdokken@gmail.com">
+                    NikolaiRDokken@gmail.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -36,7 +40,7 @@ export default class Navbar extends Component {
         </div>
 
         <div class="footer-copyright text-center bg-secondary py-3">
-          © 2018 Copyright: Nikolai Dokken
+          © 2019 Copyright: libertyboat.no
         </div>
       </footer>
     );

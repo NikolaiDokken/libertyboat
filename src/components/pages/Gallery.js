@@ -1,68 +1,96 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar.js";
 import "../../styles/Gallery.css";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+
+const images = [
+  "./resources/1.png",
+  "./resources/2.png",
+  "./resources/3.jpg",
+  "./resources/5.png",
+  "./resources/1967.jpg",
+  "./resources/1978.jpg"
+];
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+  }
+
   render() {
+    const { photoIndex, isOpen } = this.state;
+
     return (
       <div>
         <Navbar />
-        <div className="container mx-auto my-4 w-100 ">
-          <div class="bd-example">
-            <div
-              id="carouselExampleInterval"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="10000">
-                  <img
-                    src="./resources/1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  ></img>
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                  <img
-                    src="./resources/2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  ></img>
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./resources/3.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  ></img>
-                </div>
-              </div>
+        <div>
+          <div class="container">
+            <div class="row">
               <a
-                class="carousel-control-prev"
-                href="#carouselExampleInterval"
-                role="button"
-                data-slide="prev"
+                onClick={() => this.setState({ photoIndex: 0, isOpen: true })}
+                class="col-md-4"
               >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
+                <img src={images[0]} class="img-fluid rounded"></img>
               </a>
               <a
-                class="carousel-control-next"
-                href="#carouselExampleInterval"
-                role="button"
-                data-slide="next"
+                onClick={() => this.setState({ photoIndex: 1, isOpen: true })}
+                class="col-md-4"
               >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
+                <img src={images[1]} class="img-fluid rounded"></img>
+              </a>
+              <a
+                onClick={() => this.setState({ photoIndex: 2, isOpen: true })}
+                class="col-md-4"
+              >
+                <img src={images[2]} class="img-fluid rounded"></img>
+              </a>
+            </div>
+            <div class="row">
+              <a
+                onClick={() => this.setState({ photoIndex: 3, isOpen: true })}
+                class="col-md-4"
+              >
+                <img src={images[3]} class="img-fluid rounded"></img>
+              </a>
+              <a
+                onClick={() => this.setState({ photoIndex: 4, isOpen: true })}
+                class="col-md-4"
+              >
+                <img src={images[4]} class="img-fluid rounded"></img>
+              </a>
+              <a
+                onClick={() => this.setState({ photoIndex: 5, isOpen: true })}
+                class="col-md-4"
+              >
+                <img src={images[5]} class="img-fluid rounded"></img>
               </a>
             </div>
           </div>
+
+          {isOpen && (
+            <Lightbox
+              mainSrc={images[photoIndex]}
+              nextSrc={images[(photoIndex + 1) % images.length]}
+              prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+              onCloseRequest={() => this.setState({ isOpen: false })}
+              onMovePrevRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + images.length - 1) % images.length
+                })
+              }
+              onMoveNextRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + 1) % images.length
+                })
+              }
+            />
+          )}
         </div>
       </div>
     );
