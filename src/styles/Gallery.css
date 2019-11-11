@@ -15,3 +15,11 @@
     margin: 10px;
   }
 }
+
+.gallery-nav {
+  z-index: 0;
+}
+
+.custom-lightbox {
+  z-index: 100;
+}
