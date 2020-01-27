@@ -13,7 +13,7 @@ const images = [
   ["./resources/5.png", "Title", "heisann"],
   ["./resources/1967.jpg", "Title", "sdjnfdkf"],
   ["./resources/1978.jpg", "Title", "yo"],
-  ["https://i.imgur.com/Kvppbw3.mp4", "dfhbdsfj"],
+  // ["https://i.imgur.com/Kvppbw3.mp4", "dfhbdsfj"],
   ["./resources/rattKonsoll.jpg", "Title", "bfhbjhbf"]
 ];
 
